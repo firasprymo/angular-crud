@@ -36,14 +36,15 @@ export class UsersComponent implements OnInit {
   delete(flight: Flight): void {
     if (confirm('Are you sure?')) {
       this.flightService.delete(flight).subscribe(() => {
-          this.feedback = {type: 'success', message: 'Delete was successful!'};
-          setTimeout(() => {
-            this.search();
-          }, 1000);
-        },
+        this.feedback = { type: 'success', message: 'Delete was successful!' };
+        setTimeout(() => {
+          this.search();
+        }, 1000);
+      },
         err => {
-          this.feedback = {type: 'warning', message: 'Error deleting.'};
+          this.feedback = { type: 'warning', message: 'Error deleting.' };
         }
       );
     }
   }
+}

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-import { FlightService } from '../../shared/services/flight.service';
-import { Flight } from '../../shared/model/flight';
+
 import { map, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { FlightService } from 'src/app/flight/flight.service';
+import { Flight } from 'src/app/flight/flight';
 
 @Component({
   selector: 'app-flight-edit',
