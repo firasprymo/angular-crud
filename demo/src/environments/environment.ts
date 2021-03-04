@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase = {
+    apiKey: "AIzaSyBaz2eq_yzf7udxKpQBluGvujsdbrwywqg",
+    authDomain: "workflowan-b5e18.firebaseapp.com",
+    databaseURL: "https://workflowan-b5e18-default-rtdb.firebaseio.com",
+    projectId: "workflowan-b5e18",
+    storageBucket: "workflowan-b5e18.appspot.com",
+    messagingSenderId: "614168991325",
+    appId: "1:614168991325:web:d7dc934043db6845695fb4"
+  }
 };
 
 /*
