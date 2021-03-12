@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase = {
+  firebase : {
     apiKey: "AIzaSyBaz2eq_yzf7udxKpQBluGvujsdbrwywqg",
     authDomain: "workflowan-b5e18.firebaseapp.com",
     databaseURL: "https://workflowan-b5e18-default-rtdb.firebaseio.com",

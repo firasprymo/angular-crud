@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import {ExtraOptions, Routes, PreloadAllModules, RouterModule} from '@angular/router';
-import {HomeComponent} from './pages/home/home.component';
+import { Routes, RouterModule} from '@angular/router';
 
  const routes: Routes = [
   {
@@ -17,6 +16,14 @@ import {HomeComponent} from './pages/home/home.component';
   {
     path: 'user',
     loadChildren: () => import('./pages/users/users.module').then(m => m.UsersModule)
+  },
+  {
+    path: 'flight',
+    loadChildren: () => import('./pages/flight/flight.module').then(m => m.FlightModule)
+  },
+  {
+    path: 'process',
+    loadChildren: () => import('./pages/process/process.module').then(m => m.ProcessModule)
   },
   {
     path: '**',

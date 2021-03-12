@@ -4,27 +4,33 @@
       <div class="logo-img">
         <img src="../../assets/img/angular2-logo.png" alt="">
       </div>
-      Flight42
+      Workflow
     </a>
   </div>
-  <ul class="nav">
-    <li>
-      <a routerLink="home">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="home">
         <i class="ti-home"></i>
         <p>Home</p>
       </a>
     </li>
 
     <!-- <li>
-      <a routerLink="flights">
+      <a class="nav-link" routerLink="flights">
         <i class="ti-arrow-top-right"></i>
         <p>Flights</p>
       </a>
     </li> -->
-    <li>
-      <a routerLink="users">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/user/show']" routerLinkActive="router-link-active" >
         <i class="ti-user"></i>
         <p>Users</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/process/show']" routerLinkActive="router-link-active" >
+        <i class="ti-book"></i>
+        <p>Process</p>
       </a>
     </li>
 

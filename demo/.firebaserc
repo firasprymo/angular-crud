@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "workflowan-b5e18": {
+      "hosting": {
+        "demo": [
+          "workflowan-b5e18"
+        ]
+      }
+    }
+  }
+}

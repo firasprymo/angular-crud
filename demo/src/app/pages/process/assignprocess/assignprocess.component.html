@@ -1,0 +1,37 @@
+<ol class="breadcrumb float-right">
+    <li class="breadcrumb-item"><a [routerLink]="['/']">Home</a></li>
+    <li class="breadcrumb-item active">users</li>
+</ol>
+<div class="card">
+    <div class="header">
+        <h2 class="title">Assign process to user</h2>
+    </div>
+    <div class="content">
+        <div *ngIf="feedback" class="alert alert-{{feedback.type}}">{{ feedback.message }}</div>
+        <form [formGroup]="form">
+
+
+
+            <div class="form-group">
+                <label for="user">Choose your user</label>
+                <select class="form-control" id="user" formControlName="user" placeholder="Choose your user">
+                    <option *ngFor="let item of (users$ | async )" [value]="item.id">{{item.name}}</option>
+                </select>
+                <!-- <input ([ngModel])="role" id="from" name="from" class="form-control"> -->
+            </div>
+            <div class="form-group">
+                <label for="process">Choose your process</label>
+                <select class="form-control" id="process" formControlName="name" placeholder="Chouse your process">
+                    <option *ngFor="let item of (process$ | async )" [value]="item.name">{{item.name}}</option>
+                </select>
+                <!-- <input ([ngModel])="role" id="from" name="from" class="form-control"> -->
+            </div>
+
+
+
+
+            <button type="submit" (click)="assignProcess()" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+        </form>
+    </div>
+</div>

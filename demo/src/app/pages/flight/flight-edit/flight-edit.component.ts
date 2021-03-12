@@ -4,8 +4,9 @@ import { Router } from '@angular/router';
 
 import { map, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { FlightService } from 'src/app/flight/flight.service';
-import { Flight } from 'src/app/flight/flight';
+import { FlightService } from 'src/app/shared/services/flight.service';
+import { Flight } from 'src/app/shared/model/flight';
+
 
 @Component({
   selector: 'app-flight-edit',

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Flight } from 'src/app/flight/flight';
-import { FlightFilter } from 'src/app/flight/flight-filter';
-import { FlightService } from 'src/app/flight/flight.service';
+import { Flight } from 'src/app/shared/model/flight';
+import { FlightFilter } from 'src/app/shared/model/flight-filter';
+import { FlightService } from 'src/app/shared/services/flight.service';
+
 
 
 @Component({
